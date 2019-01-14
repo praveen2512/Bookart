@@ -7,7 +7,7 @@
 						<div class="panel-body" style="padding-left: 0px">
 							<div class="row" ng-repeat="book in purchaseList">
 								<div class="col-md-3">
-									<img src="{{book.imgURL}}"/>
+									<img src="{{book.imgURL}}" class="itemlogo"/>
 								</div>
 								<div class="col-md-6">
 									<span><b>{{book.name}}</b></span>
@@ -65,7 +65,7 @@
 							</div>
 							<div class="row">
 								<div class="col-md-12">
-									<button class="btn btn-info pull-right">PLACE ORDER</button>
+									<button class="btn btn-info pull-right" data-toggle="modal" data-target="#myModal">PLACE ORDER</button>
 								</div>
 							</div>
 					</div>
@@ -104,5 +104,27 @@
 				</div>
 			</div>
 		</div>
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Payment Information</h4>
+					</div>
+					<div class="modal-body" style="word-wrap: break-word;">
+						<div class="row northstarRow" style="padding-right: 15px;">
+							
+						</div>
+						<pre id="requestResponse">
+						</pre>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default"
+							data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>		
 	</div>
 </div>

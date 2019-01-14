@@ -27,39 +27,75 @@ MainModule.factory("bookService", function(){
 		{
 			bookId:145,
 			order: 0,
-			imgURL : "imgs/EVO_Logo.png",
-			name : "Two States",
+			imgURL : "imgs/HalfGirlfriend.JPG",
+			name : "Half Girlfriend",
 			price: 300,
-			rating: 4,
+			rating: 3.5,
 			binding: "Paperback",
-			publisher: "Praveen",
+			publisher: "Chetan Bhagat",
 			releaseDate: "01-01-2019",
-			details : "This Book is written by Praveen"
+			details : "This Book is written by Chetan Bhagat"
 		},
 		{
 			bookId:356,
 			order: 1,
-			imgURL : "imgs/EVO_Logo.png",
+			imgURL : "imgs/PonniyinSelvan.JPG",
 			name : "Ponniyin Selvan",
 			price: 400,
 			rating: 4,
 			binding: "Paperback",
-			publisher: "Vignesh",
+			publisher: "Kalki",
 			releaseDate: "01-01-2018",
-			details : "This Book is written by Vignesh"
+			details : "This Book is written by Kalki"
 		},
 		{
 			bookId:100,
 			order: 2,
-			imgURL : "imgs/EVO_Logo.png",
+			imgURL : "imgs/Thirukural.JPG",
 			name : "Thirukural",
 			price: 500,
-			rating: 4,
+			rating: 5,
 			binding: "Paperback",
 			publisher: "Thiruvalluvar",
 			releaseDate: "01-01-2000",
 			details : "This Book is written by Thiruvalluvar"
-		}	
+		},
+		{
+			bookId:99,
+			order: 4,
+			imgURL : "imgs/WingsOfFire.JPG",
+			name : "Wings Of Fire",
+			price: 300,
+			rating: 5,
+			binding: "Paperback",
+			publisher: "Unknown",
+			releaseDate: "01-01-2007",
+			details : "This Book is written by Dr.A.P.J.Abdul Kalam"
+		},
+		{
+			bookId:99,
+			order: 5,
+			imgURL : "imgs/Sachin_LifeStory.JPG",
+			name : "Sachin Tendulkar",
+			price: 250,
+			rating: 3.5,
+			binding: "Paperback",
+			publisher: "Unknown",
+			releaseDate: "01-01-2014",
+			details : "This Book says about Life of Master Blaster Sachin Tendulkar"
+		},
+		{
+			bookId:99,
+			order: 6,
+			imgURL : "imgs/Gandhi_Biography.JPG",
+			name : "Gandhi An Autobiography",
+			price: 250,
+			rating: 3.5,
+			binding: "Paperback",
+			publisher: "Unknown",
+			releaseDate: "01-01-2004",
+			details : "This Book says about Life of Mahatma Gandhi"
+		}
 	];
 	
 	return {
