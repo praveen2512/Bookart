@@ -1,0 +1,53 @@
+<div id="kartList-wrapper" class="bookwrapper">
+<p ng-if="kartlist.length == 0" class="emptykart">Your Kart is empty</p>
+	<div>
+		<ul class="list-unstyled">
+			<li class="book" ng-repeat="book in kartlist | orderBy:'order'">
+				<div class="row">
+					<div class="col-md-2">
+						<img src="{{book.imgURL}}"/>
+					</div>
+					<div class="col-md-10">
+						<div class="">
+							<h3>{{book.name}}</h3>
+							<p>{{book.price | currency:'Rs.'}}</p>
+							<ul class="list-unstyled list-inline">
+								<li>Rating: {{book.rating}}</li>
+								<li>Binding: {{book.binding | uppercase}}</li>
+								<li>Publisher: {{book.publisher}}</li>
+								<li>Released: {{book.releaseDate}}</li>
+							</ul>
+							<p>{{book.details}}</p>
+							<button class="btn btn-info pull-right" ng-click="removeFromKart(book)" title="Click here to remove from Kart" style="margin-top:-135px;"><i class="fa fa-trash" aria-hidden="true"></i></button>
+							<a class="btn btn-info pull-right" href="#/payment" ng-click="buy(book)">buy</a>
+							<!-- <button class="btn btn-info pull-right" ng-click="buy(book)">buy</button> -->
+							<!-- <button class="btn btn-info pull-right" data-toggle="modal" data-target="#myModal">buy</button> -->
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Request/Response</h4>
+					</div>
+					<div class="modal-body" style="word-wrap: break-word;">
+						<div class="row northstarRow" style="padding-right: 15px;">
+							
+						</div>
+						<pre id="requestResponse">
+						</pre>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default"
+							data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

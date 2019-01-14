@@ -1,0 +1,108 @@
+<div id="kartList-wrapper" class="bookwrapper paymentwrapper">
+	<div class="form-group">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">Order Summary</div>
+						<div class="panel-body" style="padding-left: 0px">
+							<div class="row" ng-repeat="book in purchaseList">
+								<div class="col-md-3">
+									<img src="{{book.imgURL}}"/>
+								</div>
+								<div class="col-md-6">
+									<span><b>{{book.name}}</b></span>
+									<span><p>{{book.rating}}</p></span>
+									<span><p>{{book.publisher}}</p></span>
+									<span><p>{{book.price | currency:'Rs.'}}</p></span>
+								</div>
+							</div>		
+
+							
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" class="form-control" placeholder="Name"/>
+								</div>
+								<div class="col-md-6">
+									<input type="text" class="form-control" maxlength="10" placeholder="10-digit mobile number"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" class="form-control" maxlength="6" placeholder="Pincode"/>
+								</div>
+								<div class="col-md-6">
+									<input type="text" class="form-control" placeholder="Locality"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<textarea rows="4" class="form-control" cols="50" placeholder="Address(Area and Street)">
+									</textarea>
+								</div>
+							</div>
+						
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" class="form-control" placeholder="City/District/Town"/>
+								</div>
+								<div class="col-md-6">
+									<select class="form-control">
+									  <option value="">-Select State-</option>
+									  <option value="AP">Andhra Pradesh</option>
+									  <option value="KA">Karnataka</option>
+									  <option value="KL">Kerals</option>
+									  <option value="TN">TamilNadu</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" class="form-control" placeholder="Landmark (Optional)"/>
+								</div>
+								<div class="col-md-6">
+									<input type="text" class="form-control" placeholder="Alternate Phone (Optional)"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<button class="btn btn-info pull-right">PLACE ORDER</button>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-default" style="margin-left: -21px">
+					<div class="panel-heading">Price Details</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-6">
+								<p>Price</p>
+							</div>
+							<div class="col-md-6">
+								<p>{{purchaseList[0].price | currency:'Rs.'}}</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<p>Delivery Charges</p>
+							</div>
+							<div class="col-md-6">
+								<p>FREE</p>
+							</div>
+						</div>
+						<hr/>
+						<div class="row">
+							<div class="col-md-6">
+								<p>Amount Payable</p>
+							</div>
+							<div class="col-md-6">
+								<p>{{purchaseList[0].price | currency:'Rs.'}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

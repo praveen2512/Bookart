@@ -1,0 +1,105 @@
+#header-wrapper{
+	width:100%;
+	margin-left: 10px;
+	background-color: #337ab7;
+	color: #ffffff;  
+}
+.navbtn{
+	background-color: pink !important;
+	margin-top: 20px;
+}
+.navbtn{
+	background-color: pink !important;
+	margin-top: 20px;
+}
+.logo{
+	padding:10px;
+	margin-right:10px;
+	font-size:35px;
+	font-family:fantasy;
+}
+
+.tagline{
+	font-size:10px;
+	margin-top:50px;
+	margin-left:-139px;
+	font-family:monospace;
+}
+.nav-wrapper{
+	margin-left:100px;
+	margin-top:15px;
+}
+.viewcontainer{
+	margin-top: -60px;
+}
+
+.bookwrapper{
+	width: 100%;
+	padding-top: 80px;
+	
+}
+
+.bookwrapper input{
+	width: 25%;
+	margin-left: 10px;
+}
+
+.bookwrapper .book{
+	border: 1px solid gray;
+	padding: 10px;
+	margin:10px;
+	border-radius: 10px;
+	/* background: whitesmoke url(../imgs/Photo_Scan.JPG); */
+}
+.bookwrapper .book .book-details{
+	margin-left:160px;
+}
+.emptykart{
+	margin-left: 25px;
+}
+
+/* .list-unstyled{
+	margin: 10px;
+}
+
+.book{
+	background: whitesmoke url(imgs/Photo_Scan.JPG);
+	border: 2px grey solid;
+	margin: 3px;
+} */
+
+.viewcontainer.ng-enter{
+	-webkit-transition:0.5s linear all;
+	-moz-transition: 0.5s linear all;
+	-o-transition:0.5s linear all;
+	transition: 0.5s linear all;
+	opacity: 0;
+}
+.viewcontainer.ng-enter-active{
+	opacity:1;
+}
+.book.ng-leave{
+	-webkit-transition:0.5s linear all;
+	-moz-transition: 0.5s linear all;
+	-o-transition:0.5s linear all;
+	transition: 0.5s linear all;
+	opacity: 1;
+	left:0;
+}
+.book.ng-leave-active{
+	opacity:0;
+	left:600px;
+}
+.book.ng-enter-active{
+	opacity:0;
+	left:0px;
+}
+
+.paymentwrapper input, .paymentwrapper textarea, .paymentwrapper select{
+	width: 100% !important;
+	margin: 0px 10px 10px 10px;
+}
+.paymentwrapper .panel{
+	margin-left: 12px;
+	margin-right: 12px;
+}
