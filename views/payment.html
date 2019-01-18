@@ -5,19 +5,17 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">Order Summary</div>
 						<div class="panel-body" style="padding-left: 0px">
-							<div class="row" ng-repeat="book in purchaseList">
-								<div class="col-md-3">
+							<div class="row" >
+								<div class="col-md-3 col-sm-3 col-xs-3" ng-repeat="book in purchaseList">
 									<img src="{{book.imgURL}}" class="itemlogo"/>
+									<div>
+										<span><b>{{book.name}}</b></span>
+										<span><p>{{book.rating}}</p></span>
+										<span><p>{{book.publisher}}</p></span>
+										<span><p>{{book.price | currency:'Rs.'}}</p></span>
+									</div>
 								</div>
-								<div class="col-md-6">
-									<span><b>{{book.name}}</b></span>
-									<span><p>{{book.rating}}</p></span>
-									<span><p>{{book.publisher}}</p></span>
-									<span><p>{{book.price | currency:'Rs.'}}</p></span>
-								</div>
-							</div>		
-
-							
+							</div>							
 							<div class="row">
 								<div class="col-md-6">
 									<input type="text" class="form-control" placeholder="Name"/>

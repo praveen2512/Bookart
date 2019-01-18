@@ -145,6 +145,7 @@ MainModule.factory("kartService", function(){
 		removeFromKart: function(book){
 			var ind = kartList.indexOf(book);
 			kartList.splice(ind,1);
+			purchaseList.splice(ind,1);
 			alert("Book removed from Kart");
 		}
 	}
