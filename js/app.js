@@ -26,7 +26,7 @@ MainModule.factory("bookService", function(){
 	var books = [
 		{
 			bookId:145,
-			order: 0,
+			order: 100,
 			imgURL : "imgs/HalfGirlfriend.JPG",
 			name : "Half Girlfriend",
 			price: 300,
